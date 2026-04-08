@@ -121,3 +121,23 @@
 3. Другие люди или существа кроме силуэта вдалеке
 
 **UI overlay idea:** Текст воспоминания "Мама сказала ждать здесь..." в верхнем левом углу
+
+## Promt 1 
+
+clip:
+lone figure, infinite white void, floating translucent glass fragments, blurred images inside fragments, soft diffused lighting, memory dust particles, desaturated white gray palette, minimalist surreal, isolation, cinematic medium shot, eye level, slight low angle, ethereal ambient light, photorealistic dreamlike, no architecture, no other characters, muted tones
+
+ttl5:
+A solitary silhouetted figure stands motionless in an endless expanse of pure white nothingness, completely isolated and small against the infinite void. Around them, five to seven translucent fragments resembling shattered glass float gently in mid-air, each containing faint blurred images that hint at forgotten memories — faces, places, moments too indistinct to recognize. Soft diffused lighting emanates from nowhere in particular, casting no sharp shadows, only gentle gradients. Fine particles of luminescent dust drift slowly through the air like frozen time. The color palette is strictly desaturated: whites, soft grays, barely-there blues, creating a sense of serene emptiness and profound loneliness. The composition is cinematic, shot at eye level with a subtle low angle to emphasize the scale of the void. The style blends photorealism with a dreamlike, ethereal quality — everything feels real yet untouchable, like a memory of a memory. There are no walls, no ceiling, no floor boundaries, no other people, no text, no architectural elements — only the figure, the fragments, and the infinite white.
+
+Promt 2
+clip
+woman in white lab coat falling backward, key card slipping from hand mid-air, flickering red emergency lighting, dramatic shadows, sparks from malfunctioning equipment, broken monitors test tubes on floor, low angle shot from floor, crimson dark gray palette, cinematic drama, urgency danger, photorealistic, no blood no graphic violence, emotion through posture not face, muted colors except red emergency
+
+promt 3
+
+clip 
+futuristic UI knowledge tree diagram, central large node connected to five smaller nodes, glowing connection lines, icons document key photo audio artifact, active nodes soft blue glow, inactive nodes dim gray, dark background interface, clean minimalist design, sci-fi aesthetic, frontal view screenshot, subtle glow effects, holographic appearance, cyberpunk interface, photorealistic rendering, no excessive text, only icons 1-2 words, no background images
+
+tt5
+A clean, futuristic user interface displaying a knowledge tree diagram, designed for a narrative puzzle game. At the exact center of the screen is a large circular node, slightly elevated and glowing with a soft blue light, labeled with a subtle icon representing "The Core Question". Radiating outward from this central node are five smaller circular nodes, each connected by thin, luminous lines that pulse gently with light. Each smaller node contains a simple, elegant icon: a folded document, an antique key, a vintage photograph, an audio waveform, and an ancient artifact — representing different types of clues the player has collected. Three of these nodes glow with the same soft blue as the center, indicating they are "active" and have been analyzed; the other two appear in muted gray, indicating they are still locked or not yet understood. The background of the interface is a deep, near-black charcoal gray, providing maximum contrast for the glowing elements without being harsh on the eyes. The overall design aesthetic is minimalist sci-fi: clean lines, subtle gradients, holographic depth effects that make the nodes appear to float slightly above the surface. The view is a direct frontal screenshot perspective, as if the player is looking straight at their in-game terminal. Subtle glow effects and light bloom on the active nodes give the interface a sense of being alive, responsive, intelligent. There is no excessive text cluttering the nodes — only the icons and, at most, one or two words in a thin, modern font. No background images, no decorative elements, no other UI components distract from the tree itself. This is a tool for thinking, for connecting ideas, for solving a mystery — and its design reflects that purpose with elegant clarity.
