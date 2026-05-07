@@ -23,8 +23,11 @@
 | [design/constants.md](design/constants.md) | Константы персонажа, мира и consistency-запреты |
 | [logs/workflow-notes.md](logs/workflow-notes.md) | Workflow notes, таблица тестов и выводы |
 | [workflows/w06_multiprompt.json](workflows/w06_multiprompt.json) | W06 multi-prompt workflow |
+| [workflows/w07_img2img_inpaint_outpaint.json](workflows/w07_img2img_inpaint_outpaint.json) | W07 img2img / inpaint / outpaint workflow |
 | [outputs/selected/hw6/](outputs/selected/hw6/) | 6 финальных selected-кадров W06 |
+| [outputs/selected/hw7/](outputs/selected/hw7/) | 5 финальных selected-кадров W07 |
 | [refs/location.md](refs/location.md) | Рефы локации для следующего шага |
+| [refs/controlnet.md](refs/controlnet.md) | Подготовка к ControlNet |
 | [refs/character.md](refs/character.md) | Исходные референсы персонажа |
 | [logs/gdd-log.md](logs/gdd-log.md) | Логи по GDD |
 | [logs/promt-plan.md](logs/promt-plan.md) | План промптов |

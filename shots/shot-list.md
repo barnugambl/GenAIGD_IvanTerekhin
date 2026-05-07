@@ -141,3 +141,43 @@ futuristic UI knowledge tree diagram, central large node connected to five small
 
 tt5
 A clean, futuristic user interface displaying a knowledge tree diagram, designed for a narrative puzzle game. At the exact center of the screen is a large circular node, slightly elevated and glowing with a soft blue light, labeled with a subtle icon representing "The Core Question". Radiating outward from this central node are five smaller circular nodes, each connected by thin, luminous lines that pulse gently with light. Each smaller node contains a simple, elegant icon: a folded document, an antique key, a vintage photograph, an audio waveform, and an ancient artifact — representing different types of clues the player has collected. Three of these nodes glow with the same soft blue as the center, indicating they are "active" and have been analyzed; the other two appear in muted gray, indicating they are still locked or not yet understood. The background of the interface is a deep, near-black charcoal gray, providing maximum contrast for the glowing elements without being harsh on the eyes. The overall design aesthetic is minimalist sci-fi: clean lines, subtle gradients, holographic depth effects that make the nodes appear to float slightly above the surface. The view is a direct frontal screenshot perspective, as if the player is looking straight at their in-game terminal. Subtle glow effects and light bloom on the active nodes give the interface a sense of being alive, responsive, intelligent. There is no excessive text cluttering the nodes — only the icons and, at most, one or two words in a thin, modern font. No background images, no decorative elements, no other UI components distract from the tree itself. This is a tool for thinking, for connecting ideas, for solving a mystery — and its design reflects that purpose with elegant clarity.
+
+---
+
+## W07 Candidates — Img2img / Inpaint / Outpaint
+
+### Shot ID: W07-SH01 — Archive Hub Establishing
+
+**Что показывает:** окружение и атмосферу Архива памяти. Кадр нужен как будущий establishing shot: игрок понимает масштаб хаба, центральную пустоту, галереи и светящиеся memory shards.
+
+**Источник:** [outputs/selected/hw7/02-w07-img2img-after.png](../outputs/selected/hw7/02-w07-img2img-after.png)
+
+**Приём:** `img2img`, выбранный denoise `0.55`.
+
+**Что ещё доработать:** усилить читаемость центрального прохода и убрать лишний шум на дальних панелях.
+
+**Контроль дальше:** `depth`, чтобы удержать перспективу этажей и платформ.
+
+### Shot ID: W07-SH02 — Memory Shard Focus
+
+**Что показывает:** интерактивный объект в окружении. Кадр объясняет, что glowing shard — не декор, а фрагмент памяти, с которым игрок может взаимодействовать.
+
+**Источник:** [outputs/selected/hw7/04-w07-inpaint-after.png](../outputs/selected/hw7/04-w07-inpaint-after.png)
+
+**Приём:** `inpaint`, локальная правка нижней правой foreground-зоны.
+
+**Что ещё доработать:** проверить форму основания и контактный свет, чтобы объект не выглядел вставленным поверх сцены.
+
+**Контроль дальше:** `canny` для контура shard и края платформы; `depth` при переносе в более сложную композицию.
+
+### Shot ID: W07-SH03 — Wide Archive Screen Candidate
+
+**Что показывает:** окружение и игровой контекст. Outpaint-версия даёт больше пространства по бокам и в foreground, поэтому кадр лучше подходит под будущий скринген с персонажем или UI.
+
+**Источник:** [outputs/selected/hw7/05-w07-outpaint-after.png](../outputs/selected/hw7/05-w07-outpaint-after.png)
+
+**Приём:** `outpaint`, расширение влево/вправо и небольшой foreground.
+
+**Что ещё доработать:** проверить швы расширения, масштаб боковых галерей и совпадение света в новых областях.
+
+**Контроль дальше:** `depth` как основной контроль перспективы; `pose` понадобится, если в кадр добавлять Воронову или Архивариуса.

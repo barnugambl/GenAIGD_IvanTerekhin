@@ -260,6 +260,9 @@
 ### Персонаж-baseline: Доктор Елена Воронова
 Текущий визуальный baseline персонажа — Доктор Елена Воронова, зафиксирована в [characters/hero.md](characters/hero.md) и серии [outputs/selected/hw6](outputs/selected/hw6). Серия подтвердила основные признаки: пожилое лицо с естественными морщинами, короткие пепельно-седые волосы, старый бежевый лабораторный халат, тёмный высокий ворот и приглушённую сепийную палитру. В вариациях удалось удержать возраст, костюмный силуэт, цветовую гамму и роль персонажа как уставшего учёного-ментора. Менялись только состояние, свет, ракурс, аксессуар и эффект распада памяти. Остающиеся риски: распад стиля при слишком сильном modifier, потеря узнаваемости лица, слабая читаемость сутулого силуэта в дальних планах и случайные детали фона/костюма. Для следующих генераций проверять кадры по [design/constants.md](design/constants.md).
 
+### W07: усиленные кадры Архива
+После занятия 7 сильнее всего продвинулся кадр Архива памяти: [outputs/selected/hw7/02-w07-img2img-after.png](outputs/selected/hw7/02-w07-img2img-after.png) перевёл исходный hub из холодного sci-fi в тёплую сепийную палитру проекта, [outputs/selected/hw7/04-w07-inpaint-after.png](outputs/selected/hw7/04-w07-inpaint-after.png) уточнил foreground memory shard как интерактивный объект, а [outputs/selected/hw7/05-w07-outpaint-after.png](outputs/selected/hw7/05-w07-outpaint-after.png) дал больше пространства для будущего скрингена. Лучше всего сработала связка: `img2img` для глобальной палитры и материала, `inpaint` для локального фокуса, `outpaint` для расширения композиции. Кандидаты на следующие скрингены зафиксированы в [shots/shot-list.md](shots/shot-list.md), а следующий контроль — в [refs/controlnet.md](refs/controlnet.md). Главные риски пока: слабая читаемость дальних галерей, нестабильная перспектива после расширения, случайные детали на стенах и возможный конфликт света в outpaint-зонах.
+
 **Приоритетные ассеты:**
 - Архив (Hub-мир)
 - Доктор Воронова
@@ -275,3 +278,5 @@
 - Константы персонажа и мира: [design/constants.md](design/constants.md)
 - Карточка персонажа: [characters/hero.md](characters/hero.md)
 - Selected outputs: [outputs/selected/hw6/](outputs/selected/hw6/)
+- W07 selected: [outputs/selected/hw7/](outputs/selected/hw7/)
+- ControlNet prep: [refs/controlnet.md](refs/controlnet.md)
