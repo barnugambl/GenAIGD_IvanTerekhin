@@ -24,10 +24,13 @@
 | [logs/workflow-notes.md](logs/workflow-notes.md) | Workflow notes, таблица тестов и выводы |
 | [workflows/w06_multiprompt.json](workflows/w06_multiprompt.json) | W06 multi-prompt workflow |
 | [workflows/w07_img2img_inpaint_outpaint.json](workflows/w07_img2img_inpaint_outpaint.json) | W07 img2img / inpaint / outpaint workflow |
+| [workflows/w08_controlnet_depth_canny.json](workflows/w08_controlnet_depth_canny.json) | W08 ControlNet Depth / Canny workflow |
 | [outputs/selected/hw6/](outputs/selected/hw6/) | 6 финальных selected-кадров W06 |
 | [outputs/selected/hw7/](outputs/selected/hw7/) | 5 финальных selected-кадров W07 |
+| [outputs/selected/hw8/](outputs/selected/hw8/) | 2 финальных selected-кадра W08 |
 | [refs/location.md](refs/location.md) | Рефы локации для следующего шага |
 | [refs/controlnet.md](refs/controlnet.md) | Подготовка к ControlNet |
+| [refs/ip-adapter.md](refs/ip-adapter.md) | Рефы для IP-Adapter |
 | [refs/character.md](refs/character.md) | Исходные референсы персонажа |
 | [logs/gdd-log.md](logs/gdd-log.md) | Логи по GDD |
 | [logs/promt-plan.md](logs/promt-plan.md) | План промптов |

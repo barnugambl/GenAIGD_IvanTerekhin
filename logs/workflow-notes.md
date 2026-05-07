@@ -297,3 +297,33 @@
 - `inpaint` полезен, когда ошибка локальная и не требует менять всю сцену.
 - `outpaint` даёт кадру экранное пространство, но требует следующего контроля через `depth`, иначе начинают плыть перспектива и масштаб.
 - В следующей итерации сохранить: тёплую сепию, пыльный воздух, amber memory shards, читаемые бетонные галереи и центральную глубину.
+
+---
+
+## HW08 — ControlNet Depth / Canny
+
+### Цель
+- Какие будущие скрингены я готовлю: широкий establishing shot Архива и foreground-кадр с интерактивным memory shard.
+- Что хочу контролировать: глубину пространства, перспективу галерей, контур shard, край платформы и читаемость foreground/midground/background.
+- Почему выбрал Depth / Canny: `Depth` лучше подходит для многоэтажной архитектуры Архива, а `Canny` — для формы интерактивного объекта, который должен читаться как game prop.
+
+### Использованный workflow
+- Tool: ComfyUI Cloud, стандартные ControlNet-шаблоны Depth / Canny.
+- Workflow: [workflows/w08_controlnet_depth_canny.json](../workflows/w08_controlnet_depth_canny.json)
+- Model: `sd_xl_base_1.0.safetensors`
+- Control mode: `Depth` для сцены Архива, `Canny` для memory shard.
+- Input image / sketch / reference: [outputs/selected/hw7/05-w07-outpaint-after.png](../outputs/selected/hw7/05-w07-outpaint-after.png) для Depth, [outputs/selected/hw7/04-w07-inpaint-after.png](../outputs/selected/hw7/04-w07-inpaint-after.png) для Canny.
+
+### Результаты
+
+| File | Mode | Input | Что сработало | Что сломалось | Решение |
+| --- | --- | --- | --- | --- | --- |
+| [08-depth-scene-01.png](../outputs/selected/hw8/08-depth-scene-01.png) | Depth | `05-w07-outpaint-after.png` | Хорошо держит центральную глубину, галереи и разнесение foreground / midground / background | Стены стали темнее, часть дальних деталей шумит | selected |
+| [08-canny-scene-01.png](../outputs/selected/hw8/08-canny-scene-01.png) | Canny | `04-w07-inpaint-after.png` | Хорошо держит контур shard, платформу и читаемый interactable focus | Фон стал менее важным, depth пространства слабее, чем в wide shot | selected |
+
+### Вывод
+- Для Архива лучше всего сработал `Depth`: он удерживает перспективу галерей и делает кадр ближе к будущему скрингену уровня.
+- `Canny` лучше сохраняет форму объекта: memory shard читается как отдельный prop, а не как случайная лампа.
+- По стилю оба результата остаются в baseline проекта: сепия, пыль, amber glow, worn concrete, без неона и стерильного sci-fi.
+- Для будущего скрингена беру `08-depth-scene-01.png` как основу wide hub shot, а `08-canny-scene-01.png` — как основу кадра интерактивного фрагмента памяти.
+- Позже нужно доработать шум на дальних стенах, точность перспективы верхних платформ и баланс яркости shard, чтобы объект не перетягивал весь кадр.
